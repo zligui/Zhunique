@@ -81,31 +81,47 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contactez-nous</h2>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h3>Coordonnées</h3>
-                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/212661932409">06 61 93 24 09</a></p>
-                    <p><i class="fab fa-facebook"></i> <a href="https://facebook.com/PiscineMarrakech">PiscineMarrakech</a></p>
-                </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Nom complet" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="tel" placeholder="Téléphone">
-                    <select required>
-                        <option value="">Service demandé</option>
-                        <option value="pool">Piscine sur mesure</option>
-                        <option value="villa">Construction de villa</option>
-                        <option value="maintenance">Entretien/Rénovation</option>
-                    </select>
-                    <textarea placeholder="Votre message" required></textarea>
-                    <button type="submit">Envoyer</button>
-                </form>
-            </div>
-        </div>
-    </section>
+    <!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Contactez-nous</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Coordonnées</h3>
+        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/212661932409">06 61 93 24 09</a></p>
+        <p><i class="fab fa-facebook"></i> <a href="https://facebook.com/PiscineMarrakech">PiscineMarrakech</a></p>
+      </div>
+
+      <!-- ✅ FORMULIRE FONCTIONNEL -->
+      <form class="contact-form" action="https://formspree.io/f/xvgrjqqb" method="POST">
+        <input type="text" name="name" placeholder="Nom complet" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="Téléphone">
+
+        <select name="service" required>
+          <option value="">Service demandé</option>
+          <option value="pool">Piscine sur mesure</option>
+          <option value="villa">Construction de villa</option>
+          <option value="maintenance">Entretien/Rénovation</option>
+        </select>
+
+        <textarea name="message" placeholder="Votre message" required></textarea>
+
+        <!-- ✅ Champ supplémentaire facultatif -->
+        <label for="source" style="margin-top: 1rem;">Comment avez-vous entendu parler de nous ?</label>
+        <select name="source" id="source" required>
+          <option value="">-- Choisissez --</option>
+          <option value="blog">Blog / tutoriel</option>
+          <option value="facebook">Facebook</option>
+          <option value="recommendation">Recommandation</option>
+          <option value="autre">Autre</option>
+        </select>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </div>
+</section>
 
     <!-- Footer -->
     <footer>
